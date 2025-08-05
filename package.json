@@ -1,0 +1,36 @@
+{
+  "name": "vacation-recommendation-microservice",
+  "version": "1.0.0",
+  "description": "Microservice for personalized vacation recommendations based on travel history and preferences",
+  "main": "vacation_microservice.js",
+  "scripts": {
+    "start": "node vacation_microservice.js",
+    "dev": "nodemon vacation_microservice.js",
+    "test": "node test_vacation_service.js",
+    "test:quick": "node test_vacation_service.js --quick",
+    "health": "curl http://localhost:3000/api/health"
+  },
+  "keywords": [
+    "microservice",
+    "rest-api",
+    "vacation",
+    "recommendations",
+    "travel",
+    "nodejs",
+    "express"
+  ],
+  "author": "Charles Caldwell",
+  "license": "NONE",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
